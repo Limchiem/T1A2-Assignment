@@ -1,0 +1,55 @@
+@import "./utility.scss";
+
+header {
+    @include background();
+
+    .logo {
+        @media screen and (max-width: 600px) {
+            padding: 16px;
+        }
+
+        .logoimg {
+            width: 100px;
+            height: 100%;
+            // border: 1px solid red;
+        }
+
+            // .name {
+            //     font-size: 24px;
+            // }
+                
+            //     .h-name {
+            //         color: black;
+            //         border: 1px solid red;
+            //     }
+    }
+
+    .topnav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+        // border: 1px solid red;
+
+        a {
+            text-decoration: none;
+            color: red;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+        .name {
+            margin-bottom: 0px;
+        }
+
+    .navbar {
+        width: 50%;
+    }
+}

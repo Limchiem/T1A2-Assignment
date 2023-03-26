@@ -1,0 +1,15 @@
+footer {
+  background-color: royalblue;
+  text-align: center;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .botnav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+footer .botnav a {
+  margin-top: 16px;
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,18 @@
+@import "./utility.scss";
+
+footer {
+    @include background();
+    
+    display: flex;
+    justify-content: space-around;
+
+    .botnav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+
+        a {
+            margin-top: 16px;
+        }
+    }
+}

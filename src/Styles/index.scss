@@ -1,0 +1,68 @@
+@import "./components/header.css";
+@import "./components/footer.scss";
+
+body {
+    margin: 0px;
+    background-color: peachpuff;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        .indeximg {
+            float: left;
+            height: 500px;
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .myinfo {
+            h1 {
+                font-size: 50px;
+            }
+
+            p {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+// For mobile view
+@media screen and (max-width: 600px) {
+
+    main {
+
+        .mypic {
+            display: flex;
+            justify-content: center;
+        }
+
+            .indeximg {
+                height: 30vh;
+                width: 200px;
+                padding: 10px;
+                border-radius: 50%;
+            }
+        
+            .myinfo {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                h1 {
+                    font-size: 36px;
+                }
+
+                p {
+                    margin-left: 10px;
+                    font-size: 20px;
+                }
+            }
+    }
+}

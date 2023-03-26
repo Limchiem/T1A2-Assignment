@@ -1,0 +1,64 @@
+@import "./components/header.css";
+footer {
+  background-color: royalblue;
+  text-align: center;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .botnav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+footer .botnav a {
+  margin-top: 16px;
+}
+
+body {
+  margin: 0px;
+  background-color: peachpuff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 600px) {
+  main .indeximg {
+    float: left;
+    height: 500px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  main .myinfo h1 {
+    font-size: 50px;
+  }
+  main .myinfo p {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .mypic {
+    display: flex;
+    justify-content: center;
+  }
+  main .indeximg {
+    height: 30vh;
+    width: 200px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  main .myinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main .myinfo h1 {
+    font-size: 36px;
+  }
+  main .myinfo p {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=index.css.map */
