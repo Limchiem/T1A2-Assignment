@@ -1,0 +1,52 @@
+// Links index.scss to this page and when home.css is used by a page that page will have the properties and values of home.css and index.css
+@import "../index";
+
+main {
+    section {
+        .container {
+            .typewrite h1 {
+                overflow: hidden;
+                white-space: nowrap;
+                animation: typing 10s;
+            }
+        }
+    }
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+// @keyframes blink-caret {
+//     0% {
+//         border-right: none;
+//     }
+
+//     50% {
+//         border-right: 1px solid black;
+//     }
+// }
+
+@media screen and (max-width: 600px) {
+    main {
+        section {
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .typewrite h1 {
+                overflow: hidden;
+                white-space: nowrap;
+                animation: typing 10s;
+            }
+        }
+    }
+}

@@ -1,17 +1,17 @@
-@import "./components/header.css";
-@import "./components/footer.scss";
+// Links index.scss to this page and when about.css is used by a page that page will have the properties and values of about.css and index.css
+@import "../index";
 
-body {
-    margin: 0px;
-    background-color: peachpuff;
-    min-height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+main {
+    section {
+        .resume {
+            a {
+                text-decoration: none;
+            }
+        }
+    }
 }
 
+// For desktop view
 @media screen and (min-width: 600px) {
     main {
         .indeximg {
@@ -63,6 +63,12 @@ body {
                     margin-left: 10px;
                     font-size: 20px;
                 }
+            }
+
+            .resume {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 10px;
             }
     }
 }

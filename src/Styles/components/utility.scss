@@ -1,3 +1,4 @@
+// When a scss file imports utility.scss it allows @include background() which will autofill the background color, align text and padding.
 @mixin background() {
     background-color: royalblue;
     text-align: center;

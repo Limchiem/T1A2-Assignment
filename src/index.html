@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lim Chiem Home</title>
     <link rel="icon" href="./images/favicon.png"/>
-    <link rel="stylesheet" href="./styles/index.css"/>
+    <link rel="stylesheet" href="./Styles/pages/home.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
     crossorigin="anonymous" 
@@ -15,29 +15,50 @@
 <!-- <div> -->
 <body>
     <header>
+        <div class="contain-head">
         <div class="logo">
-            <a href="./index.html">
+            <a href="../index.html">
                 <img class="logoimg" src="./images/logo_t.png"
                 alt ="Lim Chiem logo"/>
             </a>
         </div>
         <nav class="topnav">
-            <a href="./index.html">Home</a>
-            <a href="./pages/about.html">About</a>
-            <a href="./pages/contact.html">Contact Us</a>
-            <a href="./pages/blog.html">Blog</a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="./pages/contact.html">Contact Us</a></li>
+                <li><a href="./pages/blog.html">Blog</a></li>
+            </ul>
         </nav>
+        </div>
     </header>
 
     <main>
         <section>
-            <div class="mypic">
+            <!-- <div class="jumbotron">
+                <div class="typewriter">
+                  <h1>Lim Chiem</h1>
+                  <p>Hello and welcome to my personal webpage. From here you can find some information about me and how to get in contact.</p>
+                  <p>Follow me to get started.</p>
+                </div>
+            </div>               -->
+
+            <div class="container">
+                <div class="typewrite">
+                    <h1>Welcome to the webpage of Lim Chiem.</h1>
+                    <h1> Please click <a href="./pages/about.html">here</a> to get started.</h1>
+                </div>
+            </div>
+            <!-- <div class="mypic">
+                <a href="./pages/about.html">
                 <img class="indeximg" src="./images/mypic.jpg" alt="picture of lim chiem"/>
+                </a>
             </div>
             <div class="myinfo">
                 <h1>Lim Chiem</h1>
                 <p>Hello and welcome to my webpage. My name is Lim Chiem and i am an aspiring fullstack web developer.</p>
-            </div>
+                <p>For more information click <a href="./pages/about.html">here</a> or to get in touch directly click <a href="./pages/contact.html">here.</a></p>
+            </div> -->
         </section>
     </main>
 <!-- </div> -->

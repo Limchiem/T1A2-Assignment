@@ -1,0 +1,15 @@
+// Links header and footer with this page and any scss file that calls upon index.scss will have header, footer and index properties and values filled out.
+@import "./components/header.scss";
+@import "./components/footer.scss";
+// Every page that links here is given no margin around the page, peachpuff background, font of arial, height and flexbox controls the layout
+body {
+    margin: 0px;
+    background-color: peachpuff;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}

@@ -2,37 +2,47 @@ header {
   background-color: royalblue;
   text-align: center;
   padding: 0px;
-}
-@media screen and (max-width: 600px) {
-  header .logo {
-    padding: 16px;
-  }
-}
-header .logo .logoimg {
-  width: 100px;
-  height: 100%;
-}
-header .topnav {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
+header .contain-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logoimg {
+  width: 100px;
+  height: 100px;
+}
+header .topnav ul {
+  display: flex;
+  list-style: none;
+}
 header .topnav a {
+  padding: 16px;
   text-decoration: none;
-  color: red;
+  transition: 1s;
+}
+header a:hover {
+  background-color: white;
+  transform: scale(1, 1);
+}
+header a:active {
+  background-color: rebeccapurple;
+}
+header a:visited {
+  -webkit-text-decoration: line-through red;
+          text-decoration: line-through red;
 }
 
-@media screen and (min-width: 600px) {
-  header {
+@media screen and (max-width: 600px) {
+  .contain-head {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    flex-direction: column;
   }
-  .name {
-    margin-bottom: 0px;
-  }
-  .navbar {
-    width: 50%;
+  .topnav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
 }/*# sourceMappingURL=header.css.map */
