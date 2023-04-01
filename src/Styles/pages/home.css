@@ -101,9 +101,6 @@ main section .typewrite h2 {
   animation-name: typing;
   animation-duration: 3s;
 }
-main section a {
-  text-decoration: none;
-}
 main section a:link {
   color: #01060e;
 }
@@ -111,7 +108,6 @@ main section a:visited {
   color: rebeccapurple;
 }
 main section a:hover {
-  text-decoration: underline;
   background-color: white;
 }
 main section a:active {
