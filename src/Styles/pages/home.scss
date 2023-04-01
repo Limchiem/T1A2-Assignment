@@ -19,6 +19,27 @@ main {
                 animation-name: typing;
                 animation-duration: 3s;
             }
+
+            a   {
+                text-decoration: none;
+            }
+
+            a:link {
+                color: #01060e;
+            }
+    
+            a:visited {
+                color: rebeccapurple
+            }
+    
+            a:hover {
+                text-decoration: underline;
+                background-color: white;
+            }
+    
+            a:active {
+                color: red;
+            }
         }
     }
 
