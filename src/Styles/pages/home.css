@@ -18,32 +18,37 @@ header .topnav ul {
   display: flex;
   list-style: none;
 }
+header .topnav ul :hover {
+  background-color: white;
+}
 header .topnav a {
   padding: 16px;
   text-decoration: none;
-  transition: 1s;
 }
-header a:hover {
-  background-color: white;
-  transform: scale(1, 1);
-}
-header a:active {
-  background-color: rebeccapurple;
+header a:link {
+  color: #01060e;
 }
 header a:visited {
-  -webkit-text-decoration: line-through red;
-          text-decoration: line-through red;
+  color: rebeccapurple;
+}
+header a:hover {
+  text-decoration: underline;
+}
+header a:active {
+  color: red;
 }
 
 @media screen and (max-width: 600px) {
   .contain-head {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .topnav {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    font-size: 16px;
   }
 }
 footer {
@@ -63,9 +68,15 @@ footer .botnav {
 footer .botnav a {
   margin-top: 16px;
 }
+@media screen and (max-width: 600px) {
+  footer {
+    font-size: 16px;
+  }
+}
 
 body {
   margin: 0px;
+  padding: 0px;
   background-color: peachpuff;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
@@ -74,29 +85,42 @@ body {
   justify-content: space-between;
 }
 
-main section .container .typewrite h1 {
+main section {
+  display: flex;
+  justify-content: center;
+}
+main section h1 {
+  text-align: center;
+  font-size: 34px;
+}
+main section .typewrite h2 {
+  text-align: center;
+  font-size: 24px;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 10s;
+  animation-name: typing;
+  animation-duration: 3s;
 }
 
 @keyframes typing {
   0% {
-    width: 0;
+    width: 0%;
   }
   100% {
     width: 100%;
   }
 }
 @media screen and (max-width: 600px) {
-  main section .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  main section h1 {
+    text-align: center;
+    font-size: 24px;
   }
-  main section .typewrite h1 {
+  main section .typewrite h2 {
+    text-align: center;
+    font-size: 16px;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 10s;
+    animation-name: typing;
+    animation-duration: 3s;
   }
 }/*# sourceMappingURL=home.css.map */

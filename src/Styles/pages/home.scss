@@ -3,19 +3,28 @@
 
 main {
     section {
-        .container {
-            .typewrite h1 {
+        display: flex;
+        justify-content: center;
+
+            h1 {
+                text-align: center;
+                font-size: 34px;
+            }
+
+            .typewrite h2 {
+                text-align: center;
+                font-size: 24px;
                 overflow: hidden;
                 white-space: nowrap;
-                animation: typing 10s;
+                animation-name: typing;
+                animation-duration: 3s;
             }
         }
     }
-}
 
 @keyframes typing {
     0% {
-        width: 0;
+        width: 0%;
     }
 
     100% {
@@ -23,29 +32,20 @@ main {
     }
 }
 
-// @keyframes blink-caret {
-//     0% {
-//         border-right: none;
-//     }
-
-//     50% {
-//         border-right: 1px solid black;
-//     }
-// }
-
 @media screen and (max-width: 600px) {
     main {
         section {
-            .container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            h1 {
+                text-align: center;
+                font-size: 24px;
             }
-
-            .typewrite h1 {
+            .typewrite h2 {
+                text-align: center;
+                font-size: 16px;
                 overflow: hidden;
                 white-space: nowrap;
-                animation: typing 10s;
+                animation-name: typing;
+                animation-duration: 3s;
             }
         }
     }

@@ -18,31 +18,36 @@ header .topnav ul {
   display: flex;
   list-style: none;
 }
+header .topnav ul :hover {
+  background-color: white;
+}
 header .topnav a {
   padding: 16px;
   text-decoration: none;
-  transition: 1s;
 }
-header a:hover {
-  background-color: white;
-  transform: scale(1, 1);
-}
-header a:active {
-  background-color: rebeccapurple;
+header a:link {
+  color: #01060e;
 }
 header a:visited {
-  -webkit-text-decoration: line-through red;
-          text-decoration: line-through red;
+  color: rebeccapurple;
+}
+header a:hover {
+  text-decoration: underline;
+}
+header a:active {
+  color: red;
 }
 
 @media screen and (max-width: 600px) {
   .contain-head {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .topnav {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    font-size: 16px;
   }
 }/*# sourceMappingURL=header.css.map */

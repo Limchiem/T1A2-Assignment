@@ -22,27 +22,33 @@ header {
         ul {
             display: flex;
             list-style: none;
+
+            :hover {
+                background-color: white;
+            }
         }
 
         a {
             padding: 16px;
             text-decoration: none;
-            transition: 1s;
         }
+        
     }
-
-        a:hover {
-            background-color:white;
-            transform: scale(1,1);
-            // box-shadow: 1px 1px 1px 1px red;
-        }
-
-        a:active {
-            background-color: rebeccapurple;
+    
+        a:link {
+            color: #01060e;
         }
 
         a:visited {
-            text-decoration: line-through red;
+            color: rebeccapurple;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: red;
         }
     }
 
@@ -50,11 +56,13 @@ header {
         .contain-head {
             display: flex;
             flex-direction: column;
+            width: 100%;
         }
 
         .topnav {
             width: 100%;
             display: flex;
             justify-content: space-around;
+            font-size: 16px;
         }
     }

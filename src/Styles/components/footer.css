@@ -14,4 +14,9 @@ footer .botnav {
 }
 footer .botnav a {
   margin-top: 16px;
+}
+@media screen and (max-width: 600px) {
+  footer {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=footer.css.map */

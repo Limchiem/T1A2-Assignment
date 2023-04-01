@@ -1,1 +1,125 @@
-/*# sourceMappingURL=blog.css.map */
+header {
+  background-color: royalblue;
+  text-align: center;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+header .contain-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logoimg {
+  width: 100px;
+  height: 100px;
+}
+header .topnav ul {
+  display: flex;
+  list-style: none;
+}
+header .topnav ul :hover {
+  background-color: white;
+}
+header .topnav a {
+  padding: 16px;
+  text-decoration: none;
+}
+header a:link {
+  color: #01060e;
+}
+header a:visited {
+  color: rebeccapurple;
+}
+header a:hover {
+  text-decoration: underline;
+}
+header a:active {
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .contain-head {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .topnav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+  }
+}
+footer {
+  background-color: royalblue;
+  text-align: center;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .botnav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+footer .botnav a {
+  margin-top: 16px;
+}
+@media screen and (max-width: 600px) {
+  footer {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: peachpuff;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main .blog-title {
+  text-align: center;
+}
+main article {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+main article .blogcard {
+  border: 1px solid whitesmoke;
+  width: 40%;
+  margin: 30px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+main article .blogcard img {
+  width: 100%;
+  border-radius: 20px;
+}
+main article .blogcard a {
+  text-decoration: none;
+}
+main article .blogcard h1 {
+  margin-left: 5px;
+}
+main article .blogcard h5 {
+  margin-left: 5px;
+}
+main article .blogcard:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 5px 5px royalblue;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=blog.css.map */

@@ -1,2 +1,50 @@
 // Links index.scss to this page and when blog.css is used by a page that page will have the properties and values of blog.css and index.css
 @import "../index";
+
+main {
+    .blog-title {
+        text-align: center;
+    }
+    
+    article {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    
+            .blogcard {
+                border: 1px solid whitesmoke;
+                width: 40%;
+                margin: 30px;
+                border-radius: 20px;
+                transition: .5s;
+            
+            img {
+                width: 100%;
+                border-radius: 20px;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+
+            h1 {
+                margin-left: 5px;
+            }
+
+            h5 {
+                margin-left: 5px;
+            }
+        }
+
+            .blogcard:hover {
+                transform: scale(1.1);
+                box-shadow: 0px 0px 5px 5px royalblue;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        font-size: 14px;
+    }        
+}
