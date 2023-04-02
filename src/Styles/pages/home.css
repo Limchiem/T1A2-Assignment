@@ -89,14 +89,6 @@ footer {
   justify-content: space-around;
   /* in mobile view font size will become 16px*/
 }
-footer .botnav {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-footer .botnav a {
-  margin-top: 16px;
-}
 @media screen and (max-width: 600px) {
   footer {
     font-size: 16px;
