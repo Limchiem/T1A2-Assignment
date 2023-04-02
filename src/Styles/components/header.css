@@ -1,9 +1,20 @@
+/* a page that has linked to this can use @include background() to automatically make the background color blue, align text and padding */
+/* @import links utility to this page and anything set up up within that page will work here*/
+/* @include background() was set up in utility.scss and using this command will automatically make the background royalblue and align text*/
+/* header font and size has been set up*/
 header {
   background-color: royalblue;
   text-align: center;
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
+  /* flexbox sets up the layout of the header*/
+  /* the image height and width is set up*/
+  /* navigation bar*/
+  /* unvisited links will be black*/
+  /*visited links will turn purple */
+  /*hovering over a link will create a underline underneath */
+  /*active links will become red */
 }
 header .contain-head {
   display: flex;
@@ -14,9 +25,18 @@ header .logoimg {
   width: 100px;
   height: 100px;
 }
+header .topnav {
+  /*display flex to set everything on the main axis */
+  /*using unordered list give bullet point so using list style none hide it  */
+  /* padding inline start is to get rid of the padding that comes with unordered list */
+  /* anchor tags have 16px padding and has no underline stating its a hyperlink */
+}
 header .topnav ul {
   display: flex;
   list-style: none;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  /* hover cursor over ul gives the ul a white background*/
 }
 header .topnav ul :hover {
   background-color: white;
@@ -38,6 +58,9 @@ header a:active {
   color: red;
 }
 
+/* For mobile view*/
+/* header will not shrink and remain at 100% width*/
+/* Font will become smaller to fit smaller devices*/
 @media screen and (max-width: 600px) {
   .contain-head {
     display: flex;

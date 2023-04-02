@@ -1,6 +1,6 @@
 // Links index.scss to this page and when about.css is used by a page that page will have the properties and values of about.css and index.css
 @import "../index";
-
+/* Resume button will have no underline indicating a hyperlink*/
 main {
     section {
         .resume {
@@ -15,23 +15,23 @@ main {
 @media screen and (min-width: 600px) {
     main {
         section {
-
+            /* content in section will be on the main axis*/
             display: flex;
             justify-content: start;
             flex-direction: row;
-            
+            /* set picture size*/
             .indeximg {
                 height: 500px;
                 margin: 10px;
             }
-            
+            /* set margin around h1 and p text*/
             .myinfo {
                 margin: 10px;
-
+                /* font for h1*/    
                 h1 {
                     font-size: 34px;
                 }
-                
+                /* font for p*/
                 p {
                     font-size: 20px;
                 }
@@ -44,33 +44,34 @@ main {
 @media screen and (max-width: 600px) {
 
     main {
+        /* everything in section will drop to the next line due to flexbox*/
         section {
             display: flex;
             align-items: center;
             flex-flow: column wrap;
-            
+            /*img will rescale in mobile view */
             .indeximg {
                 height: 250px;
                 width: 200px;
                 margin-top: 20px;
                 padding: 10px;
             }
-        
+            /* text will drop to the next line and be centered and margin inbetween */
             .myinfo {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 margin: 10px;
-
+                /* h1 size in mobile view*/
                 h1 {
                     font-size: 24px;
                 }
-                
+                /* p size in mobile view */
                 p {
                     font-size: 16px;
                 }
             }
-            
+            /* resume button margin on the bottom */
             .resume {
                 margin-bottom: 10px;
             }

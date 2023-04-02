@@ -2,9 +2,14 @@
 @import "./components/header.scss";
 @import "./components/footer.scss";
 // Every page that links here is given no margin around the page, peachpuff background, font of arial, height and flexbox controls the layout
+
+/* by default body has 8px margin, setting it to 0 allow no gap around. */
+/* Default background-color will be set to peachpuff. */
+/* 100vh will allow everything in the body to cover the web browser viewport height and to grow if needed*/
+/* Font family sets the default font for the body*/
+/* display flex controls the body element layout*/
 body {
     margin: 0px;
-    padding: 0px;
     background-color: peachpuff;
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
@@ -12,5 +17,4 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }

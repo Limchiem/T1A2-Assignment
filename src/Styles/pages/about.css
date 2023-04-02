@@ -1,9 +1,20 @@
+/* a page that has linked to this can use @include background() to automatically make the background color blue, align text and padding */
+/* @import links utility to this page and anything set up up within that page will work here*/
+/* @include background() was set up in utility.scss and using this command will automatically make the background royalblue and align text*/
+/* header font and size has been set up*/
 header {
   background-color: royalblue;
   text-align: center;
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
+  /* flexbox sets up the layout of the header*/
+  /* the image height and width is set up*/
+  /* navigation bar*/
+  /* unvisited links will be black*/
+  /*visited links will turn purple */
+  /*hovering over a link will create a underline underneath */
+  /*active links will become red */
 }
 header .contain-head {
   display: flex;
@@ -14,9 +25,18 @@ header .logoimg {
   width: 100px;
   height: 100px;
 }
+header .topnav {
+  /*display flex to set everything on the main axis */
+  /*using unordered list give bullet point so using list style none hide it  */
+  /* padding inline start is to get rid of the padding that comes with unordered list */
+  /* anchor tags have 16px padding and has no underline stating its a hyperlink */
+}
 header .topnav ul {
   display: flex;
   list-style: none;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  /* hover cursor over ul gives the ul a white background*/
 }
 header .topnav ul :hover {
   background-color: white;
@@ -38,6 +58,9 @@ header a:active {
   color: red;
 }
 
+/* For mobile view*/
+/* header will not shrink and remain at 100% width*/
+/* Font will become smaller to fit smaller devices*/
 @media screen and (max-width: 600px) {
   .contain-head {
     display: flex;
@@ -51,6 +74,11 @@ header a:active {
     font-size: 16px;
   }
 }
+/* a page that has linked to this can use @include background() to automatically make the background color blue, align text and padding */
+/* @import links utility to this page and anything set up up within that page will work here*/
+/* @include background() was set up in utility.scss and using this command will automatically make the background royalblue and align text*/
+/* font and font size set up*/
+/* flexbox items have space around*/
 footer {
   background-color: royalblue;
   text-align: center;
@@ -59,6 +87,7 @@ footer {
   font-size: 18px;
   display: flex;
   justify-content: space-around;
+  /* in mobile view font size will become 16px*/
 }
 footer .botnav {
   display: flex;
@@ -74,9 +103,13 @@ footer .botnav a {
   }
 }
 
+/* by default body has 8px margin, setting it to 0 allow no gap around. */
+/* Default background-color will be set to peachpuff. */
+/* 100vh will allow everything in the body to cover the web browser viewport height and to grow if needed*/
+/* Font family sets the default font for the body*/
+/* display flex controls the body element layout*/
 body {
   margin: 0px;
-  padding: 0px;
   background-color: peachpuff;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
@@ -85,15 +118,19 @@ body {
   justify-content: space-between;
 }
 
+/* Resume button will have no underline indicating a hyperlink*/
 main section .resume a {
   text-decoration: none;
 }
 
 @media screen and (min-width: 600px) {
   main section {
+    /* content in section will be on the main axis*/
     display: flex;
     justify-content: start;
     flex-direction: row;
+    /* set picture size*/
+    /* set margin around h1 and p text*/
   }
   main section .indeximg {
     height: 500px;
@@ -101,6 +138,8 @@ main section .resume a {
   }
   main section .myinfo {
     margin: 10px;
+    /* font for h1*/
+    /* font for p*/
   }
   main section .myinfo h1 {
     font-size: 34px;
@@ -110,10 +149,16 @@ main section .resume a {
   }
 }
 @media screen and (max-width: 600px) {
+  main {
+    /* everything in section will drop to the next line due to flexbox*/
+  }
   main section {
     display: flex;
     align-items: center;
     flex-flow: column wrap;
+    /*img will rescale in mobile view */
+    /* text will drop to the next line and be centered and margin inbetween */
+    /* resume button margin on the bottom */
   }
   main section .indeximg {
     height: 250px;
@@ -126,6 +171,8 @@ main section .resume a {
     flex-wrap: wrap;
     justify-content: center;
     margin: 10px;
+    /* h1 size in mobile view*/
+    /* p size in mobile view */
   }
   main section .myinfo h1 {
     font-size: 24px;

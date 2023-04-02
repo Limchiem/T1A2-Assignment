@@ -1,10 +1,12 @@
 @import "../index";
+/* import header and footer settings*/
 
 body {
+    /* align header text*/
     .b-header {
         text-align: center;
     }
-
+    /*img will take up 100% of the page */
     .jumbotron {
         width: 100%;
 
@@ -12,7 +14,7 @@ body {
             width: 100%;
         }
     }
-
+    /*text area will have the following margin to look centered */
     .b-content {
         margin-left: 10px;
         margin-right: 5px;

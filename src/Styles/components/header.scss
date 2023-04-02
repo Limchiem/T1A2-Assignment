@@ -1,57 +1,66 @@
 @import "./utility.scss";
-
+/* @import links utility to this page and anything set up up within that page will work here*/
+/* @include background() was set up in utility.scss and using this command will automatically make the background royalblue and align text*/
+/* header font and size has been set up*/
 header {
     @include background();
     
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     
-
+/* flexbox sets up the layout of the header*/
     .contain-head {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
+/* the image height and width is set up*/
     .logoimg {
         width: 100px;
         height: 100px;
     }
-
+/* navigation bar*/
     .topnav {
+        /*display flex to set everything on the main axis */
+        /*using unordered list give bullet point so using list style none hide it  */
+        /* padding inline start is to get rid of the padding that comes with unordered list */
         ul {
             display: flex;
             list-style: none;
-
+            padding-inline-start: 0px;
+            /* hover cursor over ul gives the ul a white background*/
             :hover {
                 background-color: white;
             }
         }
-
+        /* anchor tags have 16px padding and has no underline stating its a hyperlink */
         a {
             padding: 16px;
             text-decoration: none;
         }
         
     }
-    
+        /* unvisited links will be black*/
         a:link {
             color: #01060e;
         }
-
+        /*visited links will turn purple */
         a:visited {
             color: rebeccapurple;
         }
-
+        /*hovering over a link will create a underline underneath */
         a:hover {
             text-decoration: underline;
         }
-
+        /*active links will become red */
         a:active {
             color: red;
         }
     }
 
+    /* For mobile view*/
+    /* header will not shrink and remain at 100% width*/
+    /* Font will become smaller to fit smaller devices*/
     @media screen and (max-width: 600px) {
         .contain-head {
             display: flex;

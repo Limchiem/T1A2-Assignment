@@ -1,9 +1,20 @@
+/* a page that has linked to this can use @include background() to automatically make the background color blue, align text and padding */
+/* @import links utility to this page and anything set up up within that page will work here*/
+/* @include background() was set up in utility.scss and using this command will automatically make the background royalblue and align text*/
+/* header font and size has been set up*/
 header {
   background-color: royalblue;
   text-align: center;
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
+  /* flexbox sets up the layout of the header*/
+  /* the image height and width is set up*/
+  /* navigation bar*/
+  /* unvisited links will be black*/
+  /*visited links will turn purple */
+  /*hovering over a link will create a underline underneath */
+  /*active links will become red */
 }
 header .contain-head {
   display: flex;
@@ -14,9 +25,18 @@ header .logoimg {
   width: 100px;
   height: 100px;
 }
+header .topnav {
+  /*display flex to set everything on the main axis */
+  /*using unordered list give bullet point so using list style none hide it  */
+  /* padding inline start is to get rid of the padding that comes with unordered list */
+  /* anchor tags have 16px padding and has no underline stating its a hyperlink */
+}
 header .topnav ul {
   display: flex;
   list-style: none;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  /* hover cursor over ul gives the ul a white background*/
 }
 header .topnav ul :hover {
   background-color: white;
@@ -38,6 +58,9 @@ header a:active {
   color: red;
 }
 
+/* For mobile view*/
+/* header will not shrink and remain at 100% width*/
+/* Font will become smaller to fit smaller devices*/
 @media screen and (max-width: 600px) {
   .contain-head {
     display: flex;
@@ -51,6 +74,11 @@ header a:active {
     font-size: 16px;
   }
 }
+/* a page that has linked to this can use @include background() to automatically make the background color blue, align text and padding */
+/* @import links utility to this page and anything set up up within that page will work here*/
+/* @include background() was set up in utility.scss and using this command will automatically make the background royalblue and align text*/
+/* font and font size set up*/
+/* flexbox items have space around*/
 footer {
   background-color: royalblue;
   text-align: center;
@@ -59,14 +87,7 @@ footer {
   font-size: 18px;
   display: flex;
   justify-content: space-around;
-}
-footer .botnav {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-footer .botnav a {
-  margin-top: 16px;
+  /* in mobile view font size will become 16px*/
 }
 @media screen and (max-width: 600px) {
   footer {
@@ -74,9 +95,13 @@ footer .botnav a {
   }
 }
 
+/* by default body has 8px margin, setting it to 0 allow no gap around. */
+/* Default background-color will be set to peachpuff. */
+/* 100vh will allow everything in the body to cover the web browser viewport height and to grow if needed*/
+/* Font family sets the default font for the body*/
+/* display flex controls the body element layout*/
 body {
   margin: 0px;
-  padding: 0px;
   background-color: peachpuff;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
@@ -85,13 +110,20 @@ body {
   justify-content: space-between;
 }
 
+/* flexbox to center everything and put everything on the main axis for column*/
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* form will take 100% of the display even in a smaller screen*/
+  /* margin top so it isn't too close to submit button
+  display flex - justify content so its not squashed together
+  width 100% so botnav icons are not squished together and for display flex -space around to work*/
 }
 main form {
   width: 100%;
+  /* added margins to make the form not look to close to the edge of the display and boxborder incase it creates a horiztonal scrolling*/
+  /* center button*/
 }
 main form .form-container {
   display: flex;
@@ -99,6 +131,9 @@ main form .form-container {
   margin-left: 20px;
   margin-right: 20px;
   box-sizing: border-box;
+  /* */
+  /*input area will take up 100% of the form and margin bottom to space it out */
+  /* message area will take up 100% of the form*/
 }
 main form .form-container label {
   width: 100px;
@@ -115,7 +150,14 @@ main form .button {
   justify-content: center;
   margin-top: 5vw;
 }
+main .botnav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  width: 100%;
+}
 
+/* for mobile view decrease font size */
 @media screen and (max-width: 600px) {
   main {
     font-size: 14px;

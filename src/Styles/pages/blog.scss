@@ -2,47 +2,54 @@
 @import "../index";
 
 main {
+    /* title will be centered*/
     .blog-title {
         text-align: center;
     }
     
+    /* each blog article with have a space around and set up in rows that will drop to the next line if it doesn't fit*/
     article {
         display: flex;
         justify-content: space-around;
         flex-flow: row wrap;
-    
+
+            /* each blog will look like a card on the screen*/
+            /* each card will take up 40% of the display in terms of width*/
+            /* transition set up .5s for when the mouse is hovered
+            over the card then the card will increase in size by 1.1 and have a box shadow which takes .5s to take effect*/
             .blogcard {
                 border: 1px solid whitesmoke;
                 width: 40%;
                 margin: 30px;
                 border-radius: 20px;
                 transition: .5s;
-            
+            /* img will take up 100% of the box and curves around the border to match the card*/
             img {
                 width: 100%;
                 border-radius: 20px;
             }
-            
+            /*no underline for hyperlinks */
             a {
                 text-decoration: none;
             }
-
+            /* margin for h1*/
             h1 {
                 margin-left: 5px;
             }
-
+            /* margin for h5*/
             h5 {
                 margin-left: 5px;
             }
         }
-
+            /* when hovering over a blogcard the image will scale by 1.1 and for a boxshadow around with royalblue
+            transition has been added to see how fast the effect will take place*/
             .blogcard:hover {
                 transform: scale(1.1);
                 box-shadow: 0px 0px 5px 5px royalblue;
         }
     }
 }
-// mobile view
+/* mobile view font size will decrease*/
 @media screen and (max-width: 600px) {
     main {
         font-size: 14px;

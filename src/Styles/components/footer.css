@@ -1,3 +1,8 @@
+/* a page that has linked to this can use @include background() to automatically make the background color blue, align text and padding */
+/* @import links utility to this page and anything set up up within that page will work here*/
+/* @include background() was set up in utility.scss and using this command will automatically make the background royalblue and align text*/
+/* font and font size set up*/
+/* flexbox items have space around*/
 footer {
   background-color: royalblue;
   text-align: center;
@@ -6,14 +11,7 @@ footer {
   font-size: 18px;
   display: flex;
   justify-content: space-around;
-}
-footer .botnav {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-footer .botnav a {
-  margin-top: 16px;
+  /* in mobile view font size will become 16px*/
 }
 @media screen and (max-width: 600px) {
   footer {

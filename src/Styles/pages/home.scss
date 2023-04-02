@@ -2,15 +2,19 @@
 @import "../index";
 
 main {
+    /* makes everything in the section area centered*/
     section {
         display: flex;
         justify-content: center;
-
+            /* center h1 */
             h1 {
                 text-align: center;
                 font-size: 34px;
             }
-
+            /* center h2*/
+            /* overflow hides text*/
+            /* white space makes it appear on a single line*/
+            /* animation name calls up @keyframes and animation duration dictates how long the animation will last*/
             .typewrite h2 {
                 text-align: center;
                 font-size: 24px;
@@ -19,25 +23,25 @@ main {
                 animation-name: typing;
                 animation-duration: 3s;
             }
-
+            /* color of links*/
             a:link {
                 color: #01060e;
             }
-    
+            /* color of visited links*/
             a:visited {
                 color: rebeccapurple
             }
-    
+            /* when hovering over a link background color will be white*/
             a:hover {
                 background-color: white;
             }
-    
+            /* active links will be red*/
             a:active {
                 color: red;
             }
         }
     }
-
+/* animation set up*/
 @keyframes typing {
     0% {
         width: 0%;
@@ -47,14 +51,16 @@ main {
         width: 100%;
     }
 }
-
+/* mobile view*/
 @media screen and (max-width: 600px) {
     main {
         section {
+            /* center h1 and change font size*/
             h1 {
                 text-align: center;
                 font-size: 24px;
             }
+            /* h2 animation for mobile view*/
             .typewrite h2 {
                 text-align: center;
                 font-size: 16px;

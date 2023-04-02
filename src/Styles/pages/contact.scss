@@ -1,44 +1,54 @@
 // Links index.scss to this page and when contact.css is used by a page that page will have the properties and values of contact.css and index.css
 @import "../index";
 
+/* flexbox to center everything and put everything on the main axis for column*/
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    /* form will take 100% of the display even in a smaller screen*/
     form {
         width: 100%;
-
+        /* added margins to make the form not look to close to the edge of the display and boxborder incase it creates a horiztonal scrolling*/
         .form-container {
             display: flex;
             padding: 10px;
             margin-left: 20px;
             margin-right: 20px;
             box-sizing: border-box;
-    
+            /* */
             label {
                 width: 100px;
             }
-    
+            /*input area will take up 100% of the form and margin bottom to space it out */
             input {
                 margin-bottom: 10px;
                 width: 100%;
             }
-    
+            /* message area will take up 100% of the form*/
             textarea {
                 width: 100%;
             }
         }
-
+        /* center button*/
         .button {
             display: flex;
             justify-content: center;
             margin-top: 5vw;
         }
     }
+    /* margin top so it isn't too close to submit button
+    display flex - justify content so its not squashed together
+    width 100% so botnav icons are not squished together and for display flex -space around to work*/
+    .botnav {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+        width: 100%;
+    }
 
 }
-
+/* for mobile view decrease font size */
 @media screen and (max-width: 600px) {
     main {
         font-size: 14px;
